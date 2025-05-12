@@ -1,11 +1,42 @@
-.header{
+header{
   display: flex;
-  height: 55px;
-  background-color: #1F2937;
+  height: 100px;
+  background-color: #131922;
+  color: white;
+  font-weight: bold;
 
  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 100;
+}
+
+.left-section{
+  height: 100px;
+  width: 100px;
+  align-items: center;
+}
+
+.right-section{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+}
+
+.nav-bar{
+  display: flex;
+  margin-right: 40px;
+  gap: 30px;
+}
+
+.header-text{
+  font-size: 20px;
+  margin-left: -10px;
+  font-weight: 400;
 }

@@ -1,0 +1,12 @@
+
+.section1{
+  color: white;
+  margin-top: 0;
+  display:flex;
+  background-color: #131922;
+}
+
+.gaming-image{
+  height: 200px;
+  border-radius: 20px;
+}
