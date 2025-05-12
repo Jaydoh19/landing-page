@@ -1,42 +1,52 @@
-header{
+header {
   display: flex;
+  align-items: center;           /* Vertically center items */
+  justify-content: space-between; /* Distribute items with space between them */
   height: 100px;
   background-color: #131922;
   color: white;
   font-weight: bold;
-
- position: fixed;
+  position: fixed;
   top: 0;
-  right: 0;
   left: 0;
+  right: 0;
   z-index: 100;
+  padding: 0 50px;               /* Equal space from left and right */
+  box-sizing: border-box;
 }
 
-.left-section{
-  height: 100px;
-  width: 100px;
-  align-items: center;
-}
-
-.right-section{
+.left-section,
+.right-section {
   display: flex;
-  flex: 1;
-  justify-content: space-between;
-  align-items: center;
+  align-items: center;  /* Vertical alignment of items */
 }
 
 .logo {
-  height: 100px;
+  height: 60px; /* You can adjust this to make the logo smaller */
 }
 
-.nav-bar{
+.logo-text{
+  font-size: 25px;
+  font-weight: 100;
+  white-space: nowrap;
+}
+
+.nav-bar {
   display: flex;
-  margin-right: 40px;
   gap: 30px;
 }
 
-.header-text{
+.header-text {
   font-size: 20px;
-  margin-left: -10px;
-  font-weight: 400;
+}
+
+/* Center the logo and nav items equally */
+.center-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.center-wrapper > * {
+  margin-left: 20px;  /* Ensures equal margin between logo and nav bar */
 }
