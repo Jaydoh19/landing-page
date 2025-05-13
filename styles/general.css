@@ -4,9 +4,118 @@
   margin-top: 0;
   display:flex;
   background-color: #131922;
+  justify-content: center;
+  gap: 200px;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+.header1{
+  font-size: 48px;
+  white-space: nowrap;
+}
+
+.description-header{
+  font-size: 18px;
+  color: #bbbcbe;
+  max-width: 725px;
+}
+
+.section1-button{
+  font-family: Roboto;
+  background-color: #3882F6;
+  color: white;
+  border: 0;
+  padding: 12px 45px;
+  border-radius: 12px;
+  font-weight: 200;
+  font-size: 20px;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s, border-radius 0.3s;
+  cursor: pointer;
+  margin-left: 0;
+}
+
+.section1-button:hover{
+  background-color: white;
+  color:#3882F6;
+  border-radius: 15px;
+  font-weight: 200;
+  transform: scale(1.1);
+}
+
+.span{
+  color: #3882F6;
 }
 
 .gaming-image{
   height: 200px;
   border-radius: 20px;
+}
+
+.section2{
+  background-color: white;
+  height: 370px;
+}
+
+.section2-imgs{
+  height: 125px;
+  width: 125px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.section2-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.section2-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+.section2-header{
+  text-align: center;
+  padding-top: 15px;
+}
+
+.section3{
+  background-color: lightgray;
+  height: 370px;
+}
+
+.quote-text{
+  margin-top: 0px;
+}
+
+.section4{
+  background-color: white;
+  height: 370px;
+}
+
+.section4-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.footer-content{
+  text-align: center;
+}
+
+.copyright-text{
+  color: white;
+  font-size: 12px;
+
 }
