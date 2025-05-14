@@ -67,6 +67,7 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 20px;
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .section2-content{
@@ -118,12 +119,58 @@
 .section4{
   background-color: white;
   height: 370px;
-}
-
-.section4-content{
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.section4-content {
+  display: flex;
+  align-items: center;
+  background-color: #3882F6;
+  padding: 50px 100px;
+  border-radius: 8px;
+  gap: 50px; /* Reduced gap */
+  max-width: 900px; /* Added max-width to limit the width */
+  margin: 0 auto; /* Center the content */
+  box-shadow: 0px 17px 25px rgba(0, 0, 0.3, 0.3);
+}
+
+.section4-text{
+  margin-left: 10px;
+}
+
+.section4-header-text{
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.section4-subheader-text{
+  color: white;
+  font-weight: 300px;
+}
+
+.signup-button{
+  font-family: Roboto, Arial;
+  font-weight: 200;
+  font-size: 40px;
+  border: none;
+  background-color:  rgb(235, 234, 234);
+  padding: 15px 75px;
+  border-radius: 10px;
+  margin-right: 2px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.signup-button:hover{
+  background-color: white;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .footer{
