@@ -91,7 +91,7 @@
   display: block;
   border: none;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
 }
 
 .section2-buttons:hover{
@@ -102,19 +102,81 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.section2-buttons:active{
+  opacity: 0.4;
+}
+
 .section2-header{
   text-align: center;
   padding-top: 15px;
 }
 
+
 .section3{
+  font-family: Roboto, Arial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: lightgray;
   height: 370px;
 }
 
-.quote-text{
-  margin-top: 0px;
+.section3-content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Allow children to wrap */
 }
+
+.section3-text{
+  font-family: Roboto, Arial;
+  text-align: center;
+  font-weight: bold;
+}
+
+.section3-text-subheader{
+  font-weight: 500;
+}
+
+.section3-divs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 300;
+  max-width: 300px;
+  min-height: 350px;
+  text-align: center;
+}
+
+.section3-divs ul {
+  text-align: left;
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.finance-button{
+  font-size: 20px;
+  font-family: Roboto, Arial;
+  font-weight: 300;
+  padding: 10px 20px;
+  align-self: center;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s, opacity 0.3s;
+}
+
+.finance-button:active{
+  opacity: 0.3;
+}
+
+.finance-button:hover{
+  background-color: white;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 
 .section4{
   background-color: white;
@@ -164,13 +226,17 @@
   margin-right: 2px;
   cursor: pointer;
   white-space: nowrap;
-  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s, opacity 0.3s;
 }
 
 .signup-button:hover{
   background-color: white;
   transform: scale(1.1);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.signup-button:active{
+  opacity: 0.6;
 }
 
 .footer{
